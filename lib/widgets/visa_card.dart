@@ -10,17 +10,20 @@ class VisaCard extends StatelessWidget {
     String flagurl =
         "https://static.vecteezy.com/system/resources/previews/000/409/674/original/illustration-of-pakistan-flag-vector.jpg";
     Color primaryColor = const Color(0xFF023047);
+
+    Color lightPrimaryColor = Color.fromARGB(255, 226, 226, 226);
     return Container(
         width: double.infinity,
         height: 200,
-        margin: const EdgeInsets.only(top: 10),
+        margin: const EdgeInsets.symmetric(vertical: 5,horizontal: 10),
         // alignment: Alignment.center,
         decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 204, 202, 202),
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: const Color(0xFF023047), width: 2)),
+          color: lightPrimaryColor,
+          borderRadius: BorderRadius.circular(10),
+          // border: Border.all(color: const Color(0xFF023047), width: 2),
+        ),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(10.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -41,7 +44,7 @@ class VisaCard extends StatelessWidget {
                   ),
                   Container(
                     // width: 50,
-                    height: 20,
+                    height: 30,
                     padding:
                         const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
                     alignment: Alignment.center,

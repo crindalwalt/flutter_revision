@@ -5,26 +5,28 @@ class CustomBottombar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Color bgColor = Color(0xFF023047);
     return BottomNavigationBar(
-      backgroundColor: Colors.black,
-      items: const [
+      backgroundColor: Colors.white,
+      fixedColor: Colors.white,
+      unselectedItemColor: Colors.white,
+      items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
           label: "Home",
-          backgroundColor: Colors.black,
+          backgroundColor: bgColor,
+          
         ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: "Home",
-            backgroundColor: Colors.black),
+            icon: Icon(Icons.search), label: "Home", backgroundColor: bgColor),
         BottomNavigationBarItem(
             icon: Icon(Icons.library_music),
             label: "Home",
-            backgroundColor: Colors.black),
+            backgroundColor: bgColor),
         BottomNavigationBarItem(
             icon: Icon(Icons.person_2),
             label: "Home",
-            backgroundColor: Colors.black),
+            backgroundColor: bgColor),
       ],
     );
   }
